@@ -5,11 +5,12 @@ const array = [];
 const userNumber = parseInt(prompt("Type a number"));
 
 let sum = 0;
-let index = 0
+sum = sum + userNumber
+
 
 while (sum < 50) {
     
     array.push(userNumber);
     //quando termino?
-    i++
+    
 }
