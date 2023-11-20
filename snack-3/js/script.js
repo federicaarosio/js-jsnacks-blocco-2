@@ -1,18 +1,21 @@
 // Dare la possibilità di inserire due parole. Verificare tramite una funzione che le due parole abbiano la stessa lunghezza. Se hanno la stessa lunghezza, stamparle entrambe altrimenti stampare la più lunga delle due.
 
-function areSameLength (wordOne, wordTwo) {
-    const userWordOne = prompt("Type one word");
-    const userWordTwo = prompt("Type another word");
-    if (userWordOne.length === userWordTwo.length) {
-        console.log(userWordOne + " " + userWordTwo);
-        return (userWordOne + userWordTwo)
-    } else if (userWordOne.length > userWordTwo.length) {
-        console.log(userWordOne);
-        return (userWordOne)
-    } else {
-        console.log(userWordTwo);
-        return (userWordTwo)
-    }
+const firstUserWord = prompt("Type a word");
+const secondUserWord = prompt("Type a word");
+
+if (areSameLength(firstUserWord === secondUserWord)) {
+    //sono lunghe uguali
+    console.log(firstUserWord, secondUserWord);
+} else if (firstUserWord.length > secondUserWord.length) {
+    console.log(firstUserWord);
+} else {
+    console.log(secondUserWord);
 }
 
-areSameLength ();
+function areSameLength (wordOne, wordTwo) {
+    if (wordOne.length === wordTwo.length) {
+        return true;
+    } else {
+        return false;
+    }
+}
