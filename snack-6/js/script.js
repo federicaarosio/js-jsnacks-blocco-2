@@ -3,11 +3,12 @@
 const userNumber = parseInt(prompt("Type a number"));
 
 const wrapperElement = document.querySelector("section.wrapper");
-wrapperElement.append = ;
+for (let index = 0; index < userNumber; index++) {
+    wrapperElement.appendChild(generateNSquares());
+}
 
-function generateNSquares(index) {
-    for (let index = 0; index < array.length; index++) {        
-        const newDiv =  document.createElement("div");
-        newDiv.classList.add("square");
-    }
+function generateNSquares() {
+    const divElement =  document.createElement("div");
+    divElement.classList.add("square");
+    return divElement;
 }
